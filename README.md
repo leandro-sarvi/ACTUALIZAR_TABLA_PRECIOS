@@ -33,13 +33,13 @@ archivo_b['Cod. Barra'] = archivo_b['Cod. Barra'].astype(str).str.strip()
 
 ### 3. **Normalización de precios en `archivo_b`**
 
- # Asegurar que sea texto para limpieza
+ #### Asegurar que sea texto para limpieza
 archivo_b['Precio'] = archivo_b['Precio'].astype(str) 
 
-# Eliminar comas
+#### Eliminar comas
 archivo_b['Precio'] = archivo_b['Precio'].str.replace(',', '')  
 
-# Convertir a número
+#### Convertir a número
 archivo_b['Precio'] = pd.to_numeric(archivo_b['Precio'], errors='coerce')  
 
 - **Convertir a texto**: Se asegura de que los valores de la columna "Precio" en `archivo_b` sean tratados como cadenas para facilitar la limpieza.
