@@ -14,8 +14,11 @@ pip install pandas
 
 ### 1. **Cargar archivos**
 
-archivo_a = pd.read_csv('archivo_a.csv')  # Archivo A en formato CSV
-archivo_b = pd.read_excel('archivo_b.xlsx')  # Archivo B en formato Excel
+#### Archivo A en formato CSV
+archivo_a = pd.read_csv('archivo_a.csv')  
+
+#### Archivo B en formato Excel
+archivo_b = pd.read_excel('archivo_b.xlsx')  
 
 - **`archivo_a.csv`**: Representa una tabla de datos con información principal (ej. lista de productos).
 - **`archivo_b.xlsx`**: Contiene los nuevos precios que se deben usar para actualizar los productos en `archivo_a`.
