@@ -4,6 +4,14 @@ Script de Python diseñado para actualizar los precios en un archivo CSV (archiv
 
 ***** ¡ATENCION! Crear un nuevo archivo_b que contenga solo la columna Cod. barra y la columna Precio  *****
 
+### **Requisitos previos**
+
+Antes de ejecutar el código, asegúrate de tener instalada la librería pandas, que es esencial para trabajar con archivos CSV, Excel y realizar manipulaciones de datos. 
+
+Puedes instalarla utilizando el siguiente comando:
+
+pip install pandas
+
 ### 1. **Cargar archivos**
 
 archivo_a = pd.read_csv('archivo_a.csv')  # Archivo A en formato CSV
